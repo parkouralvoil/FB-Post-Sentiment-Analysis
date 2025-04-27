@@ -1,0 +1,9 @@
+details.py
+*.csv
+*.pyc
+*.json
+tags.py
+.venv
+test.py
+__pycache__
+*.key
