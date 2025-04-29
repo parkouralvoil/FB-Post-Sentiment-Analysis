@@ -1,6 +1,7 @@
 # TypeKindly Post Scraper
 This is the data preprocessor and web scraper for TypeKindly.
 
+--- TO BE UPDATED ---
 ## Prerequisites
 0. (Not necessary but highly recommended) Create a dummy Facebook profile.
 1. You will to download a copy of a person's profile (with their permission!) on Facebook. View the details [here](https://www.facebook.com/help/212802592074644/). Only get the `Comments and Reactions` and save it as JSON.
