@@ -32,7 +32,7 @@ This is the data preprocessor and web scraper for TypeKindly.
 4. The users are expected to know how to use Inspect Element to collect the div tags for each caption and container of each post type as mentioned above.
 5. Copy those tags and copy paste them as strings to their corresponding Tags variable in the `tags.py` file that are named after the captions of each div tags above. Do this for each post type listed above.
 6. Note that the div tags are very likely to change, so you will want to check these from time to time.
-7. Create a google colab using the Jupyter Notebook found in `\liked_posts_and_comments_scraper\typekindly_sentiment_analysis.ipynb` to setup the Post Analyzer.
+7. Create a google colab using the Jupyter Notebook found in `\liked_posts_scraper\typekindly_sentiment_analysis.ipynb` to setup the Post Analyzer.
 8. Generate `key.KEY` that will be used for encryption and decryption of a post using the `key_generator.py` file by running the command `python ./key_generator`
 9. Copy the `key.KEY` file into the `liked_post_scraper` directory, ensuring that there still exists a `key.KEY` in the base of the repo
 10. Copy paste the content of the `KEY.key` file into the _secrets_ tab of Google Colab and name it `TYPEKINDLY_KEY`.
@@ -43,10 +43,10 @@ This is the data preprocessor and web scraper for TypeKindly.
 pip install -r requirements.txt
 ```
 2. Unzip the files from [prerequisites](#prerequisites) and keep on navigating the folder structure until you cannot proceed anymore. Save the `likes_and_reactions.json` file and rename it as `<person_id>-liked-and-reactions.json`
-3. In the `liked_posts_and_comments_scraper` folder, place the `.json` file to the `json_post_reader_input` folder
+3. In the `liked_posts_scraper` folder, place the `.json` file to the `json_post_reader_input` folder
 4. From the root of the repo, run the command:
 ```bash
-python .\liked_posts_and_comments_scraper\main.py
+python .\liked_posts_scraper\main.py
 ```
 
 If this is the first time you use the scraper, you will be prompted to place in the details of your Facebook profile. Place in the details of the dummy facebook profile created and exit the Chromium browser. Press enter on the terminal once done.
