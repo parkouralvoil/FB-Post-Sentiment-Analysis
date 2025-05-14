@@ -1,13 +1,10 @@
 
 from playwright.async_api import async_playwright, Page, BrowserContext, Locator
 from bs4 import BeautifulSoup
-#import json
 import os
 import asyncio
 from tags import PostTags, VideoTags, PhotoTags, ReelTags, LiveVideoTags, GroupTags
 from project_types import Tags, TypeOfPost, PostData
-# from words import filter_text
-# from results_translator import get_translation
 from security import encrypt_string
 
 directory = os.path.dirname(__file__)
